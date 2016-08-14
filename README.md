@@ -1,9 +1,9 @@
 ## This is a community project to create rules for Fingerprint engine in Approof
 Use Approof to check your web application for vulnerable and compromised components.
 * Find vulnerable third-parties libs, CMS, frameworks, etc
-* Check for configuration issues;
-* Look for exposed critical data (repositories metadata, encryption keys);
-* Find web-shells and malware.
+* Check for configuration issues
+* Look for exposed critical data (repositories metadata, encryption keys)
+* Find web-shells and malware
 
 You can download Approof here: https://approof.ptsecurity.com/
 
