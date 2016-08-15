@@ -27,3 +27,13 @@ private rule vBulletin
 	condition:
 			$package
 }
+
+private rule YiiFramework
+{
+	meta:
+			custom_description = "Private rule for indentifying YiiFramework"
+	strings:
+			$baseyii = /^class BaseYii/ nocase
+	condition:
+			$baseyii
+}
