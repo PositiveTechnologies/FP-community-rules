@@ -14,7 +14,7 @@ To upload custom rules use **"Add Yara rules"** option in main menu or just plac
 ## To contributors:
 Please send us your pull requests!
 We have a competition in three categories:
-* `”Early bird”` (the fastest contributor)
+* ~~`”Early bird”` (the fastest contributor)~~ prize goes to @qwertyDevel
 * `“Stakhanovets”` (the most efficient contributor)
 * `“80 lvl”` (the most surprising rule)
 
