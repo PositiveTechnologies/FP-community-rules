@@ -22,7 +22,7 @@ rule CVE_2015_8476
 			$v5_0_0  = /const\s+\VERSION\s+=\s+(\'|\")5.0.0(\'|\")/
 			$v2_3 = /public\s+\$Version\s+=\s+(\'|\")2.3(\'|\")/
 			$v2_2 = /public\s+\$Version\s+=\s+(\'|\")2.2(\'|\")/
-			$v2_0_3 = /public\s+\$Version\s+=\s+(\'|\")2.0.3(\'|\")/
+			$v2_0_3 = /var\s+\$Version\s+=\s+(\'|\")2.0.3(\'|\")/
 
 			
 	condition:

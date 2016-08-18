@@ -8,6 +8,16 @@ private rule php_file
 			$start
 }
 
+private rule xml_file
+{
+	meta:
+			custom_description = "Private rule for identifying xml files"
+	strings:
+			$start = /^<\?xml/ nocase
+	condition:
+			$start
+}
+
 private rule PHPMailer
 {
 	meta:
@@ -33,7 +43,21 @@ private rule YiiFramework
 	meta:
 			custom_description = "Private rule for indentifying YiiFramework"
 	strings:
-			$baseyii = /^class BaseYii/ nocase
+			$baseyii = /class BaseYii/ nocase
 	condition:
 			$baseyii
+}
+
+private rule com_aicontactsafe
+{
+	// @product = "Joomla"
+	// @product_root = "../../../"
+	// @marker_file = "/administrator/components/com_aicontactsafe/aicontactsafe.xml"
+	
+	meta:
+			custom_description = "Private rule for indentifying aicontactsafe component from Joomla CMS"
+	strings:
+			$name = /<name>aiContactSafe<\/name>/ nocase
+	condition:	
+			$name
 }
