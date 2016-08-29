@@ -61,3 +61,17 @@ private rule com_aicontactsafe
 	condition:	
 			$name
 }
+
+private rule com_theatre
+{
+	// @product = "Joomla"
+	// @product_root = "../../../"
+	// @marker_file = "/administrator/components/com_theatre/theatre.xml"
+	
+	meta:
+			custom_description = "Private rule for indentifying com_theatre component from Joomla CMS"
+	strings:
+			$name = /<name>iC\s+agenda<\/name>/ nocase
+	condition:	
+			$name
+}
