@@ -21,7 +21,7 @@ private rule xml_file
 private rule PHPMailer
 {
 	meta:
-			custom_description = "Private rule for indentifying PHPMailer class"
+			custom_description = "Private rule for identifying PHPMailer class"
 	strings:
 			$PHPMailer = "* @package PHPMailer"
 	condition:
@@ -31,7 +31,7 @@ private rule PHPMailer
 private rule vBulletin
 {
 	meta:
-			custom_description = "Private rule for indentifying vBulletin"
+			custom_description = "Private rule for identifying vBulletin"
 	strings:
 			$package = "* @package vBulletin"
 	condition:
@@ -41,11 +41,62 @@ private rule vBulletin
 private rule YiiFramework
 {
 	meta:
-			custom_description = "Private rule for indentifying YiiFramework"
+			custom_description = "Private rule for identifying YiiFramework"
 	strings:
 			$baseyii = /class BaseYii/ nocase
 	condition:
 			$baseyii
+}
+
+private rule RoundCubeWebmail
+{
+	meta:
+			custom_description = "Private rule for identifying RoundCube Webmail"
+	strings:
+			$string = "Roundcube Webmail IMAP Client"
+	condition:
+			$string
+}
+
+private rule phpBB
+{
+	meta:
+			custom_description = "Private rule for identifying phpBB forum software package"
+	strings:
+			$package = "* @package phpBB3"
+	condition:
+			$package
+}
+
+private rule CactiSuperlinksPlugin
+{
+	meta:
+			custom_description = "Private rule for identifying Cacti Superlinks plugin"
+	strings:
+			$string = "http://docs.cacti.net/plugin:superlinks"
+	condition:
+			$string
+}
+
+
+private rule PerlEmailAddressModule
+{
+	meta:
+			custom_description = "Private rule for identifying Perl Email::Address Module"
+	strings:
+			$string = /package\s+Email::Address;/
+	condition:
+			$string
+}
+
+private rule PerlHTMLScrubberModule
+{
+	meta:
+			custom_description = "Private rule for identifying Perl HTML::Scrubber Module"
+	strings:
+			$string = /package\s+HTML::Scrubber;/
+	condition:
+			$string
 }
 
 private rule com_aicontactsafe
@@ -55,7 +106,7 @@ private rule com_aicontactsafe
 	// @marker_file = "/administrator/components/com_aicontactsafe/aicontactsafe.xml"
 	
 	meta:
-			custom_description = "Private rule for indentifying aicontactsafe component from Joomla CMS"
+			custom_description = "Private rule for identifying aicontactsafe component from Joomla CMS"
 	strings:
 			$name = /<name>aiContactSafe<\/name>/ nocase
 	condition:	
@@ -69,7 +120,7 @@ private rule com_theatre
 	// @marker_file = "/administrator/components/com_theatre/theatre.xml"
 	
 	meta:
-			custom_description = "Private rule for indentifying com_theatre component from Joomla CMS"
+			custom_description = "Private rule for identifying com_theatre component from Joomla CMS"
 	strings:
 			$name = /<name>iC\s+agenda<\/name>/ nocase
 	condition:	
