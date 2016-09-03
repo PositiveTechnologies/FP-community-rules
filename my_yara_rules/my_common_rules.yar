@@ -30,10 +30,14 @@ private rule PHPMailer
 
 private rule vBulletin
 {
+	// @product = "vBulletin"
+	// @product_root = "../../"
+	// @marker_file = "/core/includes/class_core.php"
+
 	meta:
 			custom_description = "Private rule for identifying vBulletin"
 	strings:
-			$package = "* @package vBulletin"
+			$package = /\*\s+\@package\s+vBulletin/
 	condition:
 			$package
 }
@@ -125,4 +129,20 @@ private rule com_theatre
 			$name = /<name>iC\s+agenda<\/name>/ nocase
 	condition:	
 			$name
+}
+
+private rule Dotclear_CMS
+{
+	// @product = "Dotclear CMS"
+	// @product_root = "../"
+	// @marker_file = "/inc/prepend.php"
+	
+	meta:
+			custom_description = "Private rule for indentifying Dotclear CMS"
+	strings:
+			$tizer = "# This file is part of Dotclear 2"
+			$def = "define('DC_ROOT',"
+
+	condition:	
+			$tizer and $def
 }
