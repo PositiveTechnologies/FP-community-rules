@@ -15,10 +15,11 @@ To upload custom rules use **"Add Yara rules"** option in main menu or just plac
 Please send us your pull requests!
 We have a competition in three categories:
 * ~~`”Early bird”` (the fastest contributor)~~ prize goes to @qwertyDevel
-* `“Stakhanovets”` (the most efficient contributor)
+* ~~`“Stakhanovets”` (the most efficient contributor)~~ prize goes to @evdenis
 * `“80 lvl”` (the most surprising rule)
 
-Deadline is 1 Sep 2016.
+~~Deadline is 1 Sep 2016.~~
+THe competition has been extended untul 1 Oct 2016.
 
 **"Using pull request"** guide: https://help.github.com/articles/using-pull-requests/
 
