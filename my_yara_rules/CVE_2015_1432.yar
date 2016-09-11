@@ -2,7 +2,7 @@ rule CVE_2015_1432
 {
 	meta:
 		component_name = "phpBB forum software"
-		component_version = "3.0.12 and bellow"
+		component_version = "3.0.12 and below"
 		custom_title = "Cross-site request forgery (CSRF) vulnerability in phpBB before 3.0.13"
 		custom_level = "Medium"
 		custom_description = "<p>The message_options function in includes/ucp/ucp_pm_options.php in phpBB before 3.0.13 does not properly validate the form key, which allows remote attackers to conduct CSRF attacks and change the full folder setting via unspecified vectors.</p>"
