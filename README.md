@@ -19,7 +19,7 @@ We have a competition in three categories:
 * `“80 lvl”` (the most surprising rule)
 
 ~~Deadline is 1 Sep 2016.~~
-THe competition has been extended untul 1 Oct 2016.
+The competition has been extended until 1 Nov 2016.
 
 **"Using pull request"** guide: https://help.github.com/articles/using-pull-requests/
 
