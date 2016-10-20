@@ -43,7 +43,7 @@ rule ExampleRule
 ```
 ### How to organize rules:
 1. One vuln - one file
-2. Name file as `CVE_<number>` (if vuln have CVE) and place it to `/my_yara_rules/` folder
+2. Name file as `CVE_<number>` (if vuln has CVE) and place it to `/my_yara_rules/` folder
 3. Make common rules private and place it to `my_yara_rules/my_common_rules.yar`
 4. Add maximum version detection patterns in single rule. For expamle if vuln exists in all versions before 2.0.4 add patterns for 2.0.3, 2.0.2, 2.0, 1.0 etc.
 5. Don't forget to add `include` to `/custom_yara_rules.yar`
